@@ -1,0 +1,37 @@
+a:hover{
+    color: #6699ff;
+}
+li:hover{
+    color: #6699ff;
+}
+li::before{
+    content: '';
+/*    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 100%;
+    width: 50%; */
+    border-bottom: 1px solid #6699ff;
+    transition: all 1s;
+    transform: scale(0);
+    transform-origin: right;
+}
+li:hover::before{
+    transform: scale(1);
+}
+li::after{/*创建伪元素*/
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;/*设置下划线的位置在文字上方*/
+    width: 50%;
+    border-top: 1px solid #6699ff;/*设置下划线的宽度和颜色*/
+    transition: all 1s;/*设置动画时间为0.5s*/
+    transform: scale(0);
+    transform-origin: left;
+}
+li:hover::after{
+    transform: scale(0.5);
+}
+/*以上是导航栏下划线动画实现方式*/

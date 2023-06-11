@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鼠鼠的主页</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+  <style>
+		.index_box{
+		  position: relative;
+		  top: 50%;
+		  height: 150px;
+		  background-color:rgb(27, 109, 154);
+		  box-shadow: 10px 10px 10px;
+		  border-radius: 10px;
+		  animation-duration: 6s; 
+		  animation-iteration-count: infinite;/*设置动画循环*/
+		  cursor: pointer;/*设置鼠标放在图片放大功能*/
+		  transition: all 1s;
+	  }
+	  .index_box:hover{
+		  transform: scale(1.1);
+	  }
+	  .nav-link{
+		  color:white;
+	  }
+	  .nav-link:hover{
+		  color: aquamarine;
+	  }
+  </style>
+</head>
+<body style="background-color: rgb(25, 39, 87);">
+  <div>
+    <!-- 导航栏 -->
+		<nav>
+		  <div class="row nav fixed-top" style="background-color:rgb(1, 85, 138);font-size: 15px;
+		  height: 50px;box-shadow: 10px 10px 10px;">
+			<div class="col-4">
+			  <ul class="nav justify-content-head"  style="position: relative;top: 15%;">
+				  <li>
+					  <a href="./index.html" class="nav-link">我的主页</a>
+				  </li>
+			  </ul>
+			</div>
+			<div class="col-8">
+				<ul class="nav justify-content-end" style="position: relative;top: 15%;">           
+					<li class="nav-item">
+					  <a class="nav-link active" aria-current="page" href="./blog.html">博客</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="./contact.html">留言</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="https://space.bilibili.com/323671667?spm_id_from=333.1007.0.0">联系我！</a>
+					</li>
+				</ul>
+			</div>
+		  </div>
+	    </nav>
+	  <!-- 背景图片 -->
+	  <div class="container text-center">
+	    <img src="./img/background.png" width="100%" height="500px" style="display: inline-block;border-radius: 10px;">
+	  </div>
+      <div class="container px-5" style="background-color: rgb(27, 109, 154);">
+        <div class="row gx-5" style="position: absolute;top: 15%;">
+          <div class="col-3 text-center">
+            <div class="p-3 main_box" style="background-color: rgb(65, 134, 138);border-radius: 10px;
+			box-shadow: 15px 15px 15px;">
+              <img src="./img/18.jpg" class="figure-img" style="max-width: 40%;height: auto;
+			  border-radius: 50%;" alt="...">
+              <p>鼠鼠的主页</p>
+              <p>
+                鼠鼠的愿望是：<strong>世界和平！</strong>
+              </p>
+              <p>-----------------</p>
+              <p>-----------------</p>
+              <p><strong>就读学校：</strong>江西财经大学</p>
+              <p><strong>所在城市：</strong>江西省南昌市</p>
+              <p><strong>专业：</strong>软件工程（VR软件开发）</p>
+              <p>-----------------</p>
+              <button type="button" style="border-radius: 15px;border-style: hidden;width: 100px;
+			  border: solid;background-color: rgba(240, 248, 255, 0);">了解一下</button>
+            </div>
+          </div>
+          <div class="col-9" style="height: 75vh;overflow-y: scroll;">
+			  <div class="box">
+				<div class="p-3" style="background-color: rgb(255, 255, 255,0);border-radius: 10px;">
+				  <p style="color: aliceblue;"><small>Hi My Friend!</small></p>
+				  <h1 style="color: aliceblue;">Hello I'm shushu</h1>
+				  <button type="button" style="border-radius: 15px;border-style: hidden;width: 100px;border: solid;background-color: rgba(240, 248, 255, 0);">了解一下</button> 
+				</div>
+			  </div>
+            <div class="box">
+				<div class="p-3" style="background-color: rgb(255, 255, 255,0);border-radius: 10px;">
+				  <h3 style="color: aliceblue;font-family: 黑体;">鼠鼠的爱好</h3>
+				  <div class="col-md-9">
+					  <div class="card shadow mb-5">
+						  <img src="./img/q.png" alt="Guitar" class="card-img-top">
+						  <div class="card-body">
+							  <h5 class="card-title">动漫</h5>
+							  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						  </div>
+					  </div>
+				  </div>
+				  <div class="col-md-9">
+					  <div class="card shadow mb-5">
+						  <img src="./img/R-C.jpeg" alt="Books" class="card-img-top">
+						  <div class="card-body">
+							  <h5 class="card-title">游戏</h5>
+							  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						  </div>
+					  </div>
+				  </div>
+				  <div class="col-md-9">
+					  <div class="card shadow mb-5">
+						  <img src="./img/blog1-22.png" alt="Movies" class="card-img-top">
+						  <div class="card-body">
+							  <h5 class="card-title">学习</h5>
+							  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						  </div>
+					  </div>
+				  </div>
+				</div>
+			</div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+</body>
+</html>

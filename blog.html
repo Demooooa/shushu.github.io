@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鼠鼠的博客</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+  <style>
+		.index_box{
+		  border-radius: 10px;
+		  animation-duration: 3s; 
+		  animation-iteration-count: infinite;/*设置动画循环*/
+		  cursor: pointer;/*设置鼠标放在图片放大功能*/
+		  transition: all 1s;
+	  }
+	  .index_box:hover{
+		  transform: scale(1.06);
+	  }
+	  .nav-link{
+	  		  color:white;
+	  }
+	  .nav-link:hover{
+	  		  color: aquamarine;
+	  }
+  </style>
+</head>
+<body style="background-color: rgb(25, 39, 87);">
+  <div>
+    <!-- 导航栏 -->
+		<nav>
+		  <div class="row nav fixed-top" style="background-color:rgb(1, 85, 138);
+		  font-size: 15px;height: 50px;box-shadow: 10px 10px 10px;">
+			<div class="col-4">
+			  <ul class="nav justify-content-head"  style="position: relative;top: 15%;">
+				  <li>
+					  <a href="./index.html" class="nav-link">我的主页</a>
+				  </li>
+			  </ul>
+			</div>
+			<div class="col-8">
+				<ul class="nav justify-content-end" style="position: relative;top: 15%;">           
+					<li class="nav-item">
+					  <a class="nav-link active" aria-current="page" href="./blog.html">博客</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="./contact.html">留言</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="https://space.bilibili.com/323671667?spm_id_from=333.1007.0.0">联系我！</a>
+					</li>
+				</ul>
+			</div>
+		  </div>
+	    </nav>
+		<!-- 导航栏 -->
+	  <!-- 背景图片 -->
+	  <div class="container text-center">
+	    <img src="./img/background.png" width="100%" height="500px" style="display: inline-block;
+		border-radius: 10px;">
+	  </div>
+	   <!-- 背景图片 -->
+      <div class="container px-5" style="background-color: rgb(27, 109, 154);">
+        <div class="row gx-5" style="position: absolute;top: 15%;">
+			<!-- 左边 -->
+          <div class="col-3 text-center">
+            <div class="p-3 main_box" style="background-color: rgb(65, 134, 138);border-radius: 10px;
+			box-shadow: 15px 15px 15px;z-index: 100;">
+              <img src="./img/18.jpg" class="figure-img" style="max-width: 40%;height: auto;
+			  border-radius: 50%;" alt="...">
+              <p>鼠鼠的主页</p>
+              <p>
+                鼠鼠的愿望是：<strong>世界和平！</strong>
+              </p>
+              <p>-----------------</p>
+              <p>-----------------</p>
+              <p><strong>就读学校：</strong>江西财经大学</p>
+              <p><strong>所在城市：</strong>江西省南昌市</p>
+              <p><strong>专业：</strong>软件工程（VR软件开发）</p>
+              <p>-----------------</p>
+              <button type="button" style="border-radius: 15px;border-style: hidden;
+			  width: 100px;border: solid;background-color: rgba(240, 248, 255, 0);">了解一下</button>
+            </div>
+          </div>
+		  <!-- 左边 -->
+		  <!-- 右边 -->
+          <div class="col-9" style="height: 75vh;overflow-y: scroll;">
+			  <!-- 上面的内容 -->
+            <div class="box">
+				<div class="p-3" style="background-color: rgb(255, 255, 255,0);border-radius: 10px;">
+				  <p style="color: aliceblue;"><small>Hi My Friend!</small></p>
+				  <h1 style="color: aliceblue;">Hello I'm shushu</h1>
+				  <button type="button" style="border-radius: 15px;border-style: hidden;width: 100px;
+				  border: solid;background-color: rgba(240, 248, 255, 0);">了解一下</button>
+				  <p style="color: aliceblue;position: relative;top: 55%;font-size: 30px;font-family: 宋体;">我的博客</p>
+				</div>
+			</div>
+			<!-- 上面的内容 -->
+			<!-- 间隔线 -->
+			<p style="color: aliceblue;">文章-------------------------------------------------------------------------------------------- 02</p>
+			<!-- 间隔线 -->
+			<!-- 博客的内容 -->
+			
+			<div class="row">
+				<div class="col-md-9 index_box">
+				  <div class="card shadow mb-5">
+					  <img src="./img/image-20230608105900444.png" alt="Guitar" class="card-img-top">
+					  <div class="card-body">
+						  <p style="font-size: 18px;text-align: center;">Unity团队协作PlasticSCM的使用<small style="font-size: 10px;width: 50%;inline-block;color: rgb(136, 136, 136);">2023-06-01</small></p>
+						  <p>当你需要制作一个大型项目时，必须和你的团队一起制作，这是PlasticSCM就帮上大忙了！</p>
+							<p>首先你们团队需要每个人都将UnityHub升级到最新版，并且统一你们使用的unity版本</p>
+							<code>
+						  然后团队中要有一个人去创建团队，并且将大家都拉入团队
+							</code>
+						  
+							<p>这样你们在制作项目的时候，只需要把自己的成果点击上传</p>
+							<code>
+						  进过简单的审核之后，你的队员就能在云端项目里面看到你制作的内容并且添加到自己的电脑里面
+						  十分的方便！
+							</code>
+					  </div>
+				  </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-9 index_box">
+				  <div class="card shadow mb-5">
+					  <img src="./img/image-20230608110634869.png" alt="Books" class="card-img-top">
+					  <div class="card-body">
+						  <p style="font-size: 18px;text-align: center;">利用blender将sp导出贴图绑定fbx导出为glb格式<small style="font-size: 10px;width: 50%;inline-block;color: rgb(136, 136, 136);">2023-06-01</small></p>
+						  <p>当我们用maya制作了一个简单的模型之后，我们通常会将它导入进sp中进行贴图，但是这时会遇到一个问题，就是当你贴图之后，你的贴图导入其他软件之时，软件并不会自动吸附，这就导致我们不得不自己亲手一个个对应他们，造成了很多不必要的麻烦，不过有些软件也有相应的插件解决相关的问题，这里要介绍的就是利用blender来解决</p>
+						  <p>你需要将你的模型导入到blender中，然后点击你的模型，在右边找到贴图渲染，此时你会看到blender的可视化编辑器</p>
+							<code>
+						  此时只需要利用快捷键CTRL+SHIFT+T就可以唤出贴图导入页面
+							</code>
+						  
+							<p>然后只需要选择你需要的贴图，就可以了！</p>
+							<code>
+						  最后一步非常简单就是导出你们的模型，选择glb格式，这时你会发现你的模型导入到其他的软件中贴图都不会丢失
+							</code>
+					  </div>
+				  </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-9 index_box">
+				  <div class="card shadow mb-5">
+					  <img src="./img/blog1-22.png" alt="Movies" class="card-img-top">
+					  <div class="card-body">
+						 <p style="font-size: 18px;text-align: center;">Unity使用C#连接数据库出现中文乱码现象 <small style="font-size: 10px;width: 50%;inline-block;color: rgb(136, 136, 136);">2023-06-01</small></p>
+						 <p>  首先确定自己的数据库字符集设置是否正确，数据库在没有正确设置的情况下会无法写入中文，具体的解决方式就是在创建数据库表的时候设置</p>
+						<p>可以在创建表时加入下面的sql语句</p>
+						<code>
+						 ENGINE=InnoDB DEFAULT CHARSET=utf8;
+						</code>
+						 
+						<p>如果这样还是没有解决问题可以检查自己在C#中的代码，只要在最后面加上一个Charset=utf8就行了</p>
+						<code>
+						 string conString = $"Database={databaseName};port={port};Data source={host};Charset=utf8;
+						 User Id={userName};" + $"Password={password}";
+						 mySqlConnection = new MySqlConnection(conString);
+						 mySqlConnection.Open();
+						</code>
+					  </div>
+				  </div>
+				</div>
+			</div>
+			</div>
+			<!-- 博客的内容 -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
